@@ -15,8 +15,23 @@ public class InsertionSort {
         System.out.println(list);
     }
 
-    private static List<Integer> InsertSort(List<Integer> list) {
+    private static List <Integer> InsertSort(List <Integer> list) {
         //TODO napisac implementacje metody sortowania
+        //TODO - DO POPRAWKI - BLEDY LOGICZNE DLA SORTOWANIA. JESZCZE RAZ PRZEMYSLEC
+        for (int i = 1; i <= list.size(); i++) {
+            while(i > 0) {
+                int a = list.get(i);
+                int b = list.get(i - 1);
+                if (a < b) {
+                    list.set(i - 1, a);
+                    list.set(i, b);
+                    i--;
+                } else {
+
+                }
+            }
+            continue;
+        }
         return list;
     }
 
