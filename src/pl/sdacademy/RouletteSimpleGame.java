@@ -45,7 +45,7 @@ public class RouletteSimpleGame {
         }
     }
 
-    private static int getBetType() {
+    private static int getBetType() { //TODO - można przerobić na enum
         System.out.println("Jaki rodzaj zakładu Cię interesuje?");
         System.out.println("Obstawiasz: 1 - Parzyste, 2 - Nieparzyste, 3 - Zero ");
         Scanner scan = new Scanner(System.in);
